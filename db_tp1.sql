@@ -8126,31 +8126,28 @@ INSERT INTO `tp1_zone_to_geo_zone` (`zone_to_geo_zone_id`, `country_id`, `zone_i
 (108, 222, 3955, 3, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (109, 222, 3972, 3, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
+
+--
+-- Table structure for table `tp1_nouvelles`
+--
+
+CREATE TABLE `tp1_nouvelles` (
+  `id` int(11) NOT NULL,
+  `title` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `news` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `author` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 -- --------------------------------------------------------
 
---
--- Table structure for table `typecuisine`
---
 
-CREATE TABLE `typecuisine` (
-  `id` smallint(5) UNSIGNED NOT NULL,
-  `nom` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `typecuisine`
+-- Indexes for table `tp1_nouvelles`
 --
+ALTER TABLE `tp1_nouvelles`
+  ADD PRIMARY KEY (`id`);
 
-INSERT INTO `typecuisine` (`id`, `nom`) VALUES
-(1, 'traditionnel'),
-(2, 'asiatique'),
-(3, 'italien'),
-(4, 'bourgogne'),
-(5, 'fast food');
-
---
--- Indexes for dumped tables
---
 
 --
 -- Indexes for table `tp1_address`
@@ -8990,11 +8987,7 @@ ALTER TABLE `tp1_zone`
 ALTER TABLE `tp1_zone_to_geo_zone`
   ADD PRIMARY KEY (`zone_to_geo_zone_id`);
 
---
--- Indexes for table `typecuisine`
---
-ALTER TABLE `typecuisine`
-  ADD PRIMARY KEY (`id`);
+
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -9553,10 +9546,10 @@ ALTER TABLE `tp1_zone_to_geo_zone`
   MODIFY `zone_to_geo_zone_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
 
 --
--- AUTO_INCREMENT for table `typecuisine`
+-- AUTO_INCREMENT for table `tp1_nouvelles`
 --
-ALTER TABLE `typecuisine`
-  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+ALTER TABLE `tp1_nouvelles`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
