@@ -8128,10 +8128,10 @@ INSERT INTO `tp1_zone_to_geo_zone` (`zone_to_geo_zone_id`, `country_id`, `zone_i
 
 
 --
--- Table structure for table `tp1_nouvelles`
+-- Table structure for table `tp1_nouvelle`
 --
 
-CREATE TABLE `tp1_nouvelles` (
+CREATE TABLE `tp1_nouvelle` (
   `id` int(11) NOT NULL,
   `title` varchar(250) COLLATE utf8mb4_unicode_ci NOT NULL,
   `news` text COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -8143,9 +8143,9 @@ CREATE TABLE `tp1_nouvelles` (
 
 
 --
--- Indexes for table `tp1_nouvelles`
+-- Indexes for table `tp1_nouvelle`
 --
-ALTER TABLE `tp1_nouvelles`
+ALTER TABLE `tp1_nouvelle`
   ADD PRIMARY KEY (`id`);
 
 
@@ -9546,9 +9546,9 @@ ALTER TABLE `tp1_zone_to_geo_zone`
   MODIFY `zone_to_geo_zone_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
 
 --
--- AUTO_INCREMENT for table `tp1_nouvelles`
+-- AUTO_INCREMENT for table `tp1_nouvelle`
 --
-ALTER TABLE `tp1_nouvelles`
+ALTER TABLE `tp1_nouvelle`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
