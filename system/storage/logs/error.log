@@ -1,1 +1,0 @@
-2019-11-03 15:35:54 - PHP Warning:  realpath(): open_basedir restriction in effect. File(/home/e1895410) is not within the allowed path(s): (/home/e1895410/www:/home/e1895410/prive:/tmp:/usr/share/php:/var/lib/php) in /home/e1895410/www/session_4/solution_web/tp1_gestion_des_nouvelles/admin/controller/common/security.php on line 26
