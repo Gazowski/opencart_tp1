@@ -1,0 +1,5 @@
+# liste des fichiers ignorer par GIT
+config.php
+
+# liste des répertoires ignorer par GIT
+system
