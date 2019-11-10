@@ -744,3 +744,37 @@ h2.price {
     background-image: none;
     background-color: #df5c39;
 }
+
+
+
+/********************************/
+/*								*/
+/*		modif pour le tp1		*/
+/*								*/
+/********************************/
+
+.carte{
+	margin: 4rem 0;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	box-shadow: 0 10px 10px #eee;
+}
+
+.carte-top{
+	background: #eee;
+	padding: 2.5rem 2rem;
+	font-size: 1.8em;
+}
+
+.carte-corps{
+	padding:2rem;
+}
+
+.carte-corps a{
+	margin:2rem 0;
+}
+
+
+
+
+
